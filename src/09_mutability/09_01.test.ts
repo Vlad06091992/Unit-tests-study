@@ -80,11 +80,11 @@ test("Array copy test", () => {
 
 
     let copyLink = arr1
-    // @ts-ignore
+
     let copy = arr1.reduce((acc:any,el)=>{
         let obj = {...el}
-       // @ts-ignore
         acc.push(obj)
+        return acc
     },[])
 
     arr1[0].age = 32
